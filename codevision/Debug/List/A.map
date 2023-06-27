@@ -1,0 +1,52 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+lcd_str                                                                           0x0287      17
+seg                                                                               0x0298      13
+keybord                                                                           0x02A5      16
+password                                                                          0x02B5       5
+menu1                                                                             0x02BA       4
+menu2                                                                             0x02BE       7
+menu3                                                                             0x02C5       6
+t_bounce                                                                          0x02CB       2
+_base_y                                                                           0x02CD       4
+_lcd_x                                                                            0x02D1       1
+_lcd_y                                                                            0x02D2       1
+_lcd_maxx                                                                         0x02D3       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+menu_count                                                                        R4,R5        2
+ps_count                                                                          R6,R7        2
+seg_count                                                                         R8,R9        2
+inout                                                                             R10,R11      2
+lcd_cl                                                                            R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+ext_int0_isr                                                                      0x000BD     36
+ext_int1_isr                                                                      0x000E1     71
+ext_int2_isr                                                                      0x00128    103
+timer0_ovf_isr                                                                    0x0018F     64
+timer2_ovf_isr                                                                    0x001CF      1
+main                                                                              0x001D0    154
+_lcd_write_nibble_G100                                                            0x0026A     20
+_lcd_write_data                                                                   0x0027E     12
+lcd_gotoxy                                                                        0x0028A     17
+lcd_clear                                                                         0x0029B     14
+lcd_putchar                                                                       0x002A9     32
+lcd_puts                                                                          0x002C9     17
+lcd_init                                                                          0x002DA     47
+put_buff_G101                                                                     0x00309     64
+_print_G101                                                                       0x00349    308
+sprintf                                                                           0x0047D     52
+strcmp                                                                            0x004B1     20
+strlen                                                                            0x004C5     12
+strlenf                                                                           0x004D1     13
+strncpy                                                                           0x004DE     21
